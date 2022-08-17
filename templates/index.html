@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega MVT</title>
+</head>
+<body>
+    <h1>Hola soy Juan</h1>
+
+    <section>
+        {% for elemento in familia %}
+            <article>
+                <h3>Mi familiar se llama {{elemento.nombre}}, tiene {{elemeto.edad}} y nacio el {{elemento.nacimiento}}</h3>
+            </article>
+        {% endfor %}
+    </section>
+
+</body>
+</html>
