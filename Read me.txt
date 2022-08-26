@@ -1,0 +1,11 @@
+En el template tenemos el index html del sitio.
+
+Dentro de ProyectoCoder tenemos los urls y los settings.
+
+Dentro de AppCoder tenemos la aplicacion. 
+En la carpeta static esta el css con los estilos. 
+En la carpeta migrations estan las clases que hice. 
+En pycache esta el cache. 
+Adicionalmente estan los archivos con los datos de ladmin, models y views.
+
+Al mismo nivel que el readme esta la DB y el manage.

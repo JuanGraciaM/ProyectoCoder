@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrega MVT</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'estilos.css' %}">
 </head>
 <body>
     <h1>Hola soy Juan</h1>
@@ -15,6 +17,24 @@
                 <h3>Mi familiar se llama {{elemento.nombre}}, tiene {{elemeto.edad}} y nacio el {{elemento.nacimiento}}</h3>
             </article>
         {% endfor %}
+    </section>
+    <section>
+        <form action="" method="post">
+            {% csrf_token %}
+            <label for="firstname">Nombre:</label><br>
+            <input type="text" name="nombre" id="firstname" placeholder="Nombre"> <br>
+            <label for="lastname">Apellido:</label><br>
+            <input type="text" name="apellido" id="lastname" placeholder="Apellido"> <br>
+            <label for="textocoment">Comentario:</label><br>
+            <textarea name="mensaje" id="textocoment">
+
+            </textarea> <br>
+            <input type="submit" name="enviar" value="Enviar Comentario">
+            {%  if mensaje %}
+            <h2>{{ mensaje }}</h2>
+            {% endif %}
+
+        </form>
     </section>
 
 </body>
